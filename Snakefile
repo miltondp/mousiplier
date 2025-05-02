@@ -19,7 +19,7 @@ rule all:
 rule download_data:
     output:
         "data/sra_counts.tsv",
-        "data/recount_metadata.rda"
+        "data/metadata_df.rda"
     shell:
         "Rscript src/0_download_recount3.R "
 
