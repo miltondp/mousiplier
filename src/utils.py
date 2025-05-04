@@ -8,7 +8,7 @@ import biomart
 @lru_cache()
 def get_ensembl_mappings() -> Dict[str, str]:
     # Set up connection to server
-    server = biomart.BiomartServer('http://uswest.ensembl.org/biomart')
+    server = biomart.BiomartServer('http://useast.ensembl.org/biomart')
     mart = server.datasets['mmusculus_gene_ensembl']
 
     # List the types of data we want
