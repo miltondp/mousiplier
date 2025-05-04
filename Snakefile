@@ -38,7 +38,7 @@ rule download_marker_genes:
     output:
         "data/Mouse_cell_markers.txt"
     shell:
-        "curl http://biocc.hrbmu.edu.cn/CellMarker/download/Mouse_cell_markers.txt > data/Mouse_cell_markers.txt"
+        "curl http://xteam.xbio.top/CellMarker/download/Mouse_cell_markers.txt > data/Mouse_cell_markers.txt"
 
 rule metadata_to_tsv:
     input:
